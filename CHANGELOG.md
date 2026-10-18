@@ -20,3 +20,6 @@ Versionnement [sémantique](https://semver.org/lang/fr/).
 - Marketplace `oely-atelier`, installation au niveau utilisateur.
 - Segment d'avancement intégré à la barre de statut PowerShell.
 - Douze tests automatisés du CLI.
+- Manuels d'installation et d'utilisation : `docs/QUICKSTART.md`,
+  `docs/GUIDE.md`, index de la documentation et README du plugin.
+- Scripts d'installation idempotents : `install.sh` et `install.ps1`.

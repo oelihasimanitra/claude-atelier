@@ -30,14 +30,25 @@ fichiers JSON et Markdown, lisibles et versionnables avec le code.
 Prérequis : **Claude Code 2.1+** et **Node.js 20+**.
 
 ```bash
-git clone https://github.com/<votre-compte>/claude-atelier.git ~/Documents/claude-atelier
+git clone https://github.com/oelihasimanitra/claude-atelier.git ~/Documents/claude-atelier
 cd ~/Documents/claude-atelier
 claude plugin marketplace add ./ --scope user
 claude plugin install atelier@oely-atelier --scope user
 ```
 
+Ou, depuis une copie déjà clonée :
+
+```bash
+./install.sh            # macOS, Linux, Git Bash
+powershell -ExecutionPolicy Bypass -File .\install.ps1   # Windows
+```
+
 L'installation au niveau **user** rend le plugin disponible dans tous les projets
 présents et futurs. Redémarrez Claude Code pour charger les hooks.
+
+Guide pas à pas pour une nouvelle machine :
+[`docs/QUICKSTART.md`](docs/QUICKSTART.md). Manuel complet :
+[`docs/GUIDE.md`](docs/GUIDE.md).
 
 Vérification :
 
@@ -154,10 +165,16 @@ Seuls `status.json`, `locks/` et `tmp/` sont ignorés par Git.
 
 ## Documentation
 
-- [`docs/INSTALL.md`](docs/INSTALL.md) — installation, mise à jour, barre de statut.
+- [`docs/QUICKSTART.md`](docs/QUICKSTART.md) — installer et lancer un premier projet en
+  dix minutes, sur une nouvelle machine.
+- [`docs/GUIDE.md`](docs/GUIDE.md) — manuel d'utilisation : concepts, boucle de travail,
+  tickets, recherche, reprise, FAQ.
+- [`docs/INSTALL.md`](docs/INSTALL.md) — installation, mise à jour, barre de statut,
+  désinstallation.
 - [`docs/COMMANDS.md`](docs/COMMANDS.md) — référence du CLI et de chaque commande.
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — couches, cycle de vie, hooks.
 - [`docs/QUALITY.md`](docs/QUALITY.md) — critères, preuves et dérogations.
+- [`docs/README.md`](docs/README.md) — index et parcours de lecture.
 - [`CHANGELOG.md`](CHANGELOG.md) — journal des versions.
 
 ## Développement

@@ -9,8 +9,20 @@
 ## Depuis GitHub, sur une autre machine
 
 ```bash
-git clone https://github.com/<votre-compte>/claude-atelier.git ~/Documents/claude-atelier
+git clone https://github.com/oelihasimanitra/claude-atelier.git ~/Documents/claude-atelier
 cd ~/Documents/claude-atelier
+```
+
+Puis, au choix :
+
+```bash
+./install.sh            # macOS, Linux, Git Bash
+powershell -ExecutionPolicy Bypass -File .\install.ps1   # Windows
+```
+
+ou les deux commandes équivalentes :
+
+```bash
 claude plugin marketplace add ./ --scope user
 claude plugin install atelier@oely-atelier --scope user
 ```
@@ -28,6 +40,13 @@ Si le dépôt est déjà sur la machine :
 
 ```bash
 cd ~/Documents/claude-atelier
+./install.sh            # ou .\install.ps1 sous Windows
+```
+
+Les scripts vérifient Node 20+, la présence de `claude`, ajoutent le marketplace et
+installent le plugin. Ils sont idempotents. Pour tout faire à la main :
+
+```bash
 claude plugin marketplace add ./ --scope user
 claude plugin install atelier@oely-atelier --scope user
 ```
