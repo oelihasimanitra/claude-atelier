@@ -70,7 +70,7 @@ node .atelier/bin/atelier.mjs init "Café App"
 
 Options : `--name <nom>`, `--root <chemin>`. `init` est idempotent : relancé sur un
 registre existant, il conserve le nom, les vérifications et les documents déjà
-enregistrés.
+enregistrés, et rafraîchit `.atelier/bin/atelier.mjs` avec la version courante du CLI.
 
 Détection automatique des vérifications :
 

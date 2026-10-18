@@ -227,8 +227,8 @@ Fin de tour
 
 - Le plugin ne peut pas définir lui-même la barre de statut principale ; l'intégration au
   script utilisateur est manuelle (documentée dans `INSTALL.md`).
-- Les hooks s'exécutent dans tous les projets activés : le coût est une lecture de
-  fichier par session et par tour.
+- Les hooks s'exécutent dans tous les projets activés : le coût est une recherche de
+  `.atelier/project.json` en remontant les dossiers, à chaque session et à chaque tour.
 - `status.json` n'est pas versionné : deux machines voient des statuts générés
   localement, ce qui est le comportement attendu.
 - Les agents ne partagent pas de mémoire entre eux ; le registre est leur seul canal de
