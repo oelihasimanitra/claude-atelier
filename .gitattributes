@@ -1,0 +1,3 @@
+# Keep the repository and every checkout on LF: the ledger is read by Node and
+# consumed on Windows, macOS and Linux alike.
+* text=auto eol=lf

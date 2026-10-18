@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "atelier",
+  "displayName": "Atelier",
+  "version": "0.1.0",
+  "description": "Planificateur de projet, suivi des tâches, tickets et bugs, base de connaissances et orchestration de sous-agents pour Claude Code.",
+  "author": {
+    "name": "Oely Rama",
+    "email": "oely.hasimanitra@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "planning",
+    "tasks",
+    "tickets",
+    "bugs",
+    "knowledge-base",
+    "orchestration",
+    "subagents"
+  ],
+  "defaultEnabled": true
+}

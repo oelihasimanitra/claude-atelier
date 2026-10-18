@@ -1,0 +1,23 @@
+{
+  "name": "oely-atelier",
+  "description": "Atelier — planification, suivi de projet et base de connaissances pour Claude Code.",
+  "owner": {
+    "name": "Oely Rama",
+    "email": "oely.hasimanitra@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "atelier",
+      "source": "./plugins/atelier",
+      "description": "Planificateur de projet, suivi des tâches, tickets et bugs, base de connaissances et orchestration de sous-agents.",
+      "category": "workflow",
+      "tags": [
+        "planning",
+        "tasks",
+        "knowledge-base",
+        "subagents"
+      ],
+      "defaultEnabled": true
+    }
+  ]
+}

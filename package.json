@@ -1,0 +1,16 @@
+{
+  "name": "claude-atelier",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Planificateur, suivi de tâches et base de connaissances pour Claude Code.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test plugins/atelier/tests/atelier.test.mjs",
+    "test:watch": "node --test --watch plugins/atelier/tests/atelier.test.mjs",
+    "validate": "claude plugin validate ./plugins/atelier --strict && claude plugin validate . --strict"
+  },
+  "license": "MIT"
+}

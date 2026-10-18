@@ -1,0 +1,28 @@
+{
+  "description": "Charge le contexte du registre Atelier au démarrage et rafraîchit le statut en fin de tour.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/atelier.mjs\" hook-session-start",
+            "timeout": 20,
+            "statusMessage": "Lecture du registre Atelier"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/atelier.mjs\" hook-stop",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
